@@ -1,3 +1,7 @@
+# Securing a Web Application
+
+## References
+
 [Securing a Web Application][1]
 
 [The method `withDefaultPasswordEncoder()` from the type User is deprecated][2]

@@ -4,7 +4,7 @@
 > `-all` is the default for all platforms.
 
 > `chunk()` is prefixed `<Person,Person>` because it is a generic method. This represents the
-> input and output types of each “chunk” of processing and lines up with
+> input and output types of each "chunk" of processing and lines up with
 > `ItemReader<Person>` and `ItemWriter<Person>`.
 
 ## References

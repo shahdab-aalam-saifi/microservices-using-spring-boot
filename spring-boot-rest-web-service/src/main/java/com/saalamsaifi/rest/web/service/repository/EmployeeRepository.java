@@ -1,9 +1,6 @@
 package com.saalamsaifi.rest.web.service.repository;
 
+import com.saalamsaifi.rest.web.service.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.saalamsaifi.rest.web.service.model.Employee;
-
-public interface EmployeeRepository extends JpaRepository<Employee, Long> {
-
-}
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {}

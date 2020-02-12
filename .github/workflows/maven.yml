@@ -3,10 +3,8 @@ name: Microservices using Spring Boot
 on: [push, pull_request]
 
 jobs:
-  build:
-
+  style:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Google Java Format

@@ -1,10 +1,9 @@
 package com.saalamsaifi.spring.batch.processing.processor;
 
+import com.saalamsaifi.spring.batch.processing.model.Person;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
-
-import com.saalamsaifi.spring.batch.processing.model.Person;
 
 public class PersonItemProcessor implements ItemProcessor<Person, Person> {
 
@@ -21,5 +20,4 @@ public class PersonItemProcessor implements ItemProcessor<Person, Person> {
 
     return transformedPerson;
   }
-
 }

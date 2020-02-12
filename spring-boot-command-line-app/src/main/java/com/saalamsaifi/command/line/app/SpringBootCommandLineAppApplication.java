@@ -8,14 +8,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SpringBootCommandLineAppApplication implements CommandLineRunner {
-	private static final Logger LOGGER = LoggerFactory.getLogger(SpringBootCommandLineAppApplication.class);
+  private static final Logger LOGGER =
+      LoggerFactory.getLogger(SpringBootCommandLineAppApplication.class);
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootCommandLineAppApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(SpringBootCommandLineAppApplication.class, args);
+  }
 
-	@Override
-	public void run(String... args) throws Exception {
-		LOGGER.info("Hello World!");
-	}
+  @Override
+  public void run(String... args) throws Exception {
+    LOGGER.info("Hello World!");
+  }
 }

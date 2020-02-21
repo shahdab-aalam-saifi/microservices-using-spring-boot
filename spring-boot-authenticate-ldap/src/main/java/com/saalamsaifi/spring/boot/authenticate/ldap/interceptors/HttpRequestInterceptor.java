@@ -15,20 +15,39 @@ public class HttpRequestInterceptor implements HandlerInterceptor {
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
       throws Exception {
-    LOG.debug("PreHandle::{}::{}::{}", request.getRemoteAddr(), request.getRemotePort(), request.getQueryString());
+    LOG.debug(
+        "PreHandle::{}::{}::{}",
+        request.getRemoteAddr(),
+        request.getRemotePort(),
+        request.getQueryString());
     return HandlerInterceptor.super.preHandle(request, response, handler);
   }
 
   @Override
-  public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
-      ModelAndView modelAndView) throws Exception {
-    LOG.debug("PostHandle::{}::{}::{}::{}", request.getRemoteAddr(), request.getRemotePort(), request.getQueryString(), response.getStatus());
+  public void postHandle(
+      HttpServletRequest request,
+      HttpServletResponse response,
+      Object handler,
+      ModelAndView modelAndView)
+      throws Exception {
+    LOG.debug(
+        "PostHandle::{}::{}::{}::{}",
+        request.getRemoteAddr(),
+        request.getRemotePort(),
+        request.getQueryString(),
+        response.getStatus());
     HandlerInterceptor.super.postHandle(request, response, handler, modelAndView);
   }
 
   @Override
-  public void afterCompletion(HttpServletRequest request, HttpServletResponse response,
-      Object handler, Exception ex) throws Exception {
-    LOG.debug("AfterCompletion::{}::{}::{}::{}", request.getRemoteAddr(), request.getRemotePort(), request.getQueryString(), response.getStatus());
+  public void afterCompletion(
+      HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
+      throws Exception {
+    LOG.debug(
+        "AfterCompletion::{}::{}::{}::{}",
+        request.getRemoteAddr(),
+        request.getRemotePort(),
+        request.getQueryString(),
+        response.getStatus());
   }
 }

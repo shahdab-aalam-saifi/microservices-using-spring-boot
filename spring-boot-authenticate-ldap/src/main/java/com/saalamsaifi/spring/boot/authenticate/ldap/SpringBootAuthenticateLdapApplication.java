@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringBootAuthenticateLdapApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootAuthenticateLdapApplication.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(SpringBootAuthenticateLdapApplication.class, args);
+  }
 }

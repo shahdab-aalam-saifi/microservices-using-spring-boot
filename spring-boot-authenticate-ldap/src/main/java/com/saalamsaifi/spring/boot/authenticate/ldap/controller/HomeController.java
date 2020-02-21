@@ -10,5 +10,4 @@ public class HomeController {
   public String index() {
     return "Welcome to the home page!";
   }
-
 }

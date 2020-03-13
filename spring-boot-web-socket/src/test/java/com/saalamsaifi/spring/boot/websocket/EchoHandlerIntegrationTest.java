@@ -1,6 +1,7 @@
 package com.saalamsaifi.spring.boot.websocket;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
@@ -23,9 +24,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class EchoHandlerIntegrationTest {
-  
-  @LocalServerPort
-  private int port;
+
+  @LocalServerPort private int port;
 
   @ClientEndpoint
   public static class SimpleTestClientEndpoint {
@@ -93,7 +93,7 @@ public class EchoHandlerIntegrationTest {
     container.connectToServer(testClient, uri);
     testClient.sendTextAndWait("Hello World!", 200);
     testClient.closeAndWait(2);
-    assertThat(testClient.getReceived()).containsExactly("CONNECTION ESTABLISHED",
-        "RECEIVED: Hello World!");
+    assertThat(testClient.getReceived())
+        .containsExactly("CONNECTION ESTABLISHED", "RECEIVED: Hello World!");
   }
 }

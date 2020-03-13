@@ -11,5 +11,4 @@ public class SpringBootWebSocketApplicationTests {
 
   @Test
   public void contextLoads() {}
-
 }

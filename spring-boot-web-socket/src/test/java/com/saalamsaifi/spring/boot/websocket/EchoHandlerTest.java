@@ -4,13 +4,14 @@ import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
+
+import com.saalamsaifi.spring.boot.websocket.handler.EchoHandler;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
-import com.saalamsaifi.spring.boot.websocket.handler.EchoHandler;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

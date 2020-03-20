@@ -1,6 +1,7 @@
 package com.saalamsaifi.spring.boot.messagebroker;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,8 +25,7 @@ import org.springframework.web.socket.messaging.WebSocketStompClient;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class EchoHandlerIntegrationTest {
-  @LocalServerPort
-  private int port;
+  @LocalServerPort private int port;
 
   private WebSocketStompClient stompClient;
   private List<StompSession> sessions = new ArrayList<>();

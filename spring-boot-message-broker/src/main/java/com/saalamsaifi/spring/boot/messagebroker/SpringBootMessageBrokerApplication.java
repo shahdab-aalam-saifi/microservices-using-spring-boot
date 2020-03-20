@@ -27,5 +27,4 @@ public class SpringBootMessageBrokerApplication implements WebSocketMessageBroke
     registry.addEndpoint("/echo-endpoint");
     WebSocketMessageBrokerConfigurer.super.registerStompEndpoints(registry);
   }
-
 }
